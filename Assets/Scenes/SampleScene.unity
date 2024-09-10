@@ -650,9 +650,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57497fe39120a9d4d82c5aa730bc7d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 3
+  _jumpForce: 6
   _speed: 3
+  _runSpeedMultiplier: 2
   _mouseSensitivity: 200
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &573502994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,8 +827,8 @@ GameObject:
   - component: {fileID: 1651724219}
   - component: {fileID: 1651724218}
   - component: {fileID: 1651724217}
-  m_Layer: 0
-  m_Name: Plane
+  m_Layer: 6
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
